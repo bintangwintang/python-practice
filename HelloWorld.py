@@ -1,1 +1,1 @@
-print("Hello, World!")print("Practice Code. Day 1.")
+print("Practice Code. Day 1.")
