@@ -87,6 +87,45 @@ print(x)
 #x = "John Doe"
 #print(x[1:5])
 
-txt="my name is scar, and i am really energetic"
-if "tired" not in txt:
-        print("Scan Complete. Subject Scar = Tired Status NOT Detected.")
+#txt="my name is scar, and i am really energetic"
+#if "tired" not in txt:
+#        print("Scan Complete. Subject Scar = Tired Status NOT Detected.")
+
+#playerhealth
+'''
+playerHealth = 1000
+enemyAttack = 200
+specialEnemyAttack = 500
+
+playerHealth -= enemyAttack
+playerHealth -= specialEnemyAttack
+if playerHealth <= 0:
+    print("You are dead.")
+else:
+    print(f"You have {playerHealth} health remaining.")
+'''
+'''
+x = 5
+if isinstance(x, int):
+    print("x is an integer.")
+else:
+    print("x is not an integer.")
+'''
+'''
+#left over money
+month_Money = 4000
+food = 500
+bills = 1000
+clothing = 300
+
+total = month_Money - (food + bills + clothing)
+print(f"You have {total} left over this month. Good job!") #i love you f-strings
+'''
+
+x = 6
+y = 3
+
+print(x^y)
+#6 = 0110
+#3 = 0011
+#^ = 0101
