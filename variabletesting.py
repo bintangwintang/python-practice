@@ -122,10 +122,23 @@ total = month_Money - (food + bills + clothing)
 print(f"You have {total} left over this month. Good job!") #i love you f-strings
 '''
 
-x = 6
-y = 3
+#x = 6
+#y = 3
 
-print(x^y)
+#print(x^y)
 #6 = 0110
 #3 = 0011
 #^ = 0101
+
+
+#dictionary test
+studentA = {
+    "name": "Rudy",
+    "age": 17,
+    "grade": 11,
+    "strengths": "intelligent",
+    "weaknesses": "lazy",
+    "gradeRanking": "3 out of 178 students."
+}
+
+print(studentA["name"])
