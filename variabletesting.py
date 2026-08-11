@@ -132,7 +132,8 @@ print(f"You have {total} left over this month. Good job!") #i love you f-strings
 
 
 #dictionary test
-studentA = {
+#studentA = {
+'''
     "name": "Rudy",
     "age": 17,
     "grade": 11,
@@ -142,3 +143,82 @@ studentA = {
 }
 
 print(studentA["name"])
+'''
+
+#nested dict practice
+#a = {'name' : 'John', 'age' : 20}
+#b = {'name' : 'May', 'age' : 23}
+#customers = {'c1' : a, 'c2' : b}
+#for x, obj in customers.items():
+#  print(x)
+    
+#  for y in obj:
+#    print(y + ':', obj[y])
+
+'''
+breakdown of nested dict practice (line 148-156):
+
+**customers = {'c1' : a, 'c2' : b}** is just a dictionary, like every other dictionary ive studied.
+the values themselves are simply just other dictionaries.
+
+so, the outer loop: **for x, obj in customers.items():** isn't doing anything fancier than i'm aware of!
+its simply looping through the keys(x) and the values(obj) of customers (as we called customers.items()).
+what this means, is that **x** is equal, to the key of customers, which would mean this;
+
+x = 'c1' and 'c2' (as those two are the keys for customers)
+&   
+obj = a and b (as those two are the values for customers) -- which also just HAPPEN to be dictionaries themselves.
+
+
+the inner loop isn't anything fancy either! you just need another loop to unpack 'a' and 'b' as those two are dictionaries, like customers!
+so the inner loop is **for y in obj:** 
+again, it's simply looping through the keys(y) in obj (which is the dictionaries themselves, a and b)
+what this means is that **y** is equal to the keys of both dictionaries, a and b, meaning;
+
+y = 'name' and 'age' (as those are the keys for both dictionaries)
+&
+obj[y] = the specific value for each key in both dictionaries, as obj IS either a or b, a coming first, b coming second (as we're incrementing with each loop)
+
+soooo.... round 1 with obj[y]
+
+y = 'name'
+obj[y] = 'John'
+&
+y = 'age'
+obj[y] = 20
+
+round 2 with obj[y]
+
+y = 'name'
+obj[y] = 'May'
+&
+y = 'age'
+obj[y] = 23
+
+
+kapiche, me?
+
+'''
+
+#nested dict rep practice solo (rpg weapons inspiration)
+
+#weapons rpg nested dict practice
+lightWep = {'name': 'Fang of Catastrophe', 'rarity': 'Legendary Tier', 'atk': 125, 'enchantedCheck': True}
+mediumWep = {'name': 'Copper Shortsword', 'rarity': 'Common Tier', 'atk': 10, 'enchantedCheck': False}
+heavyWep = {'name': 'Black-Iron Great Axe', 'rarity': 'Rare Tier', 'atk': 50, 'enchantedCheck': False}
+wepInventory = {'Light': lightWep, 'Medium': mediumWep, 'Heavy': heavyWep}
+
+for x, obj in wepInventory.items():
+    print(x)
+
+    for y in obj:
+        print(y + ':', obj[y])
+
+"""
+Light
+name: Fang of Catastrophe
+rarity: Legendary Tier
+
+>you get the gist
+>don’t spoil me, lemme find out if this shit is functional first, lol
+"""
