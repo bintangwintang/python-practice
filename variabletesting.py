@@ -203,6 +203,7 @@ kapiche, me?
 #nested dict rep practice solo (rpg weapons inspiration)
 
 #weapons rpg nested dict practice
+'''
 lightWep = {'name': 'Fang of Catastrophe', 'rarity': 'Legendary Tier', 'atk': 125, 'enchantedCheck': True}
 mediumWep = {'name': 'Copper Shortsword', 'rarity': 'Common Tier', 'atk': 10, 'enchantedCheck': False}
 heavyWep = {'name': 'Black-Iron Great Axe', 'rarity': 'Rare Tier', 'atk': 50, 'enchantedCheck': False}
@@ -213,7 +214,7 @@ for x, obj in wepInventory.items():
 
     for y in obj:
         print(y + ':', obj[y])
-
+'''
 """
 Light
 name: Fang of Catastrophe
@@ -222,3 +223,62 @@ rarity: Legendary Tier
 >you get the gist
 >don’t spoil me, lemme find out if this shit is functional first, lol
 """
+'''day = 4
+match day:
+  case 1:
+    print("Monday")
+  case 2:
+    print("Tuesday")
+  case 3:
+    print("Wednesday")
+  case 4:
+    print("Thursday")
+  case 5:
+    print("Friday")
+  case 6:
+    print("Saturday")
+  case 7:
+    print("Sunday")
+
+#same as
+day = 4
+if day == 1:
+    print("Monday")
+elif day == 2:
+    print("Tuesday")
+elif day == 3:
+    print("Wednesday")
+elif day == 4:
+    print("Thursday")
+elif day == 5:
+    print("Friday")
+elif day == 6:
+    print("Saturday")
+elif day == 7:
+    print("Sunday")'''
+
+'''month = 5
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5 if month == 4:
+    print("A weekday in April")
+  case 1 | 2 | 3 | 4 | 5 if month == 5:
+    print("A weekday in May")
+  case _:
+    print("No match")'''
+
+#testing my understanding of match case w if statements
+#rpg example again
+'''
+atk = 20
+defence = 10
+match atk:
+  case _ if atk > defence:
+    print("You win!")
+  case _ if atk < defence:
+    print("You lose!")
+  case _ if atk == defence:
+    print("Draw")
+  case _:
+    print("No match")
+'''
